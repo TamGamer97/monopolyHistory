@@ -11,7 +11,7 @@ const diceDisplay = document.getElementById('diceDisplay');
 
 // const BOARD_SIZE = 600;
 // const BOARD_SIZE =600;
-const BOARD_SIZE = 1300; // Increase canvas size
+const BOARD_SIZE = 1100; // Increase canvas size
 const SQUARE_SIZE = BOARD_SIZE / 11.3;
 
 
