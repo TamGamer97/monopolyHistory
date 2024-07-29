@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D Monopoly</title>
+    <link rel="stylesheet" type="text/css" href="/index.css" />
+</head>
+<body>
+    <canvas id="gameBoard" width="600" height="600" style="z-index: 10000;" ></canvas>
+    <!-- <img src="/NewBoard.png" style="width: 600px; height: 600px; position: absolute; top: 29px;" /> -->
+    <!-- <div style="width: 600px; height: 720px;">
+        
+
+    </div> -->
+
+    <img src="/NewBoard.png" style="width: 600px; height: 600px; position: absolute; margin-top: -75px;">
+
+    <button id="rollDice" >Roll Dice</button>
+    <div id="playerInfo"></div>
+    <div id="overlay">
+        <div id="prompt">
+            <p id="promptText"></p>
+            <button id="buyYes">Yes</button>
+            <button id="buyNo">No</button>
+        </div>
+    </div>
+    <div id="diceOverlay">
+        <div id="diceDisplay"></div>
+    </div>
+    <script src="/index.js"> </script>
+</body>
+</html>

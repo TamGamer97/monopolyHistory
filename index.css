@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #d2cdae;
+    /* scale: 1.2; */
+}
+canvas {
+    border: 1px solid black;
+}
+#overlay, #diceOverlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 100000;
+}
+#prompt, #diceDisplay {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+#prompt button {
+    margin: 10px;
+    padding: 5px 10px;
+}
+#diceDisplay {
+    font-size: 48px;
+    font-weight: bold;
+}
+#rollDice{
+    width: 210px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background-color: #ec8938;
+}
+#rollDice:hover{
+    background-color: #da853f;
+}
