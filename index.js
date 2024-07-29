@@ -11,12 +11,12 @@ const diceDisplay = document.getElementById('diceDisplay');
 
 // const BOARD_SIZE = 600;
 // const BOARD_SIZE =600;
-const BOARD_SIZE = 600; // Increase canvas size
+const BOARD_SIZE = 1300; // Increase canvas size
 const SQUARE_SIZE = BOARD_SIZE / 11.3;
 
 
-const cornerSize = 79.1150442477876;
-const regularSize = 50.00734513274336;
+const cornerSize = 79.1150442477876 * (BOARD_SIZE/600);
+const regularSize = 50.00734513274336 * (BOARD_SIZE/600);
 
 const boardImage = new Image();
 // boardImage.src = 'efefe'
@@ -114,7 +114,7 @@ async function drawBoard() {
         // ctx.arc(x, y, 10, 0, 2 * Math.PI);
         // ctx.fill();
 
-        ctx.drawImage(player.image, x - 15, y - 15, 30, 30); // Adjust size as needed
+        ctx.drawImage(player.image, x - 15, y - 15, 30 * (BOARD_SIZE/600), 30 * (BOARD_SIZE/600)); // Adjust size as needed
 
     });
 }
